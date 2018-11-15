@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class WineConfig(AppConfig):
-    name = 'Wine'
+    name = 'wine'
