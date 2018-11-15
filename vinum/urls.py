@@ -18,6 +18,6 @@ from django.urls import include,path
 from wine import urls
 
 urlpatterns = [
-    path('', include('wine.urls')),
     path('admin/', admin.site.urls),
+    path('', include('wine.urls')),
 ]
