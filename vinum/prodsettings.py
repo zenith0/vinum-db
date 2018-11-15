@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import dj_database_url
 import django_heroku
 
 
@@ -29,8 +28,6 @@ SECRET_KEY = 'qh)=##@1$#niv5=0s&l5jy)uqdlbbyo+6=nb6rpv9_!rwsgxrh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['vinum-db.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -74,19 +71,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'vinum.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
