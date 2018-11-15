@@ -27,7 +27,7 @@ SECRET_KEY = 'qh)=##@1$#niv5=0s&l5jy)uqdlbbyo+6=nb6rpv9_!rwsgxrh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vinum-db.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
