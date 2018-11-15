@@ -27,7 +27,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 SECRET_KEY = 'qh)=##@1$#niv5=0s&l5jy)uqdlbbyo+6=nb6rpv9_!rwsgxrh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Application definition
 
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'wine'
+    'wine.apps.WineConfig',
 ]
 
 MIDDLEWARE = [
