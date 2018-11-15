@@ -1,0 +1,8 @@
+<h1>Wine</h1>
+<ul>
+{% for wine in wine_list %}
+    <li><a href="{{wine.slug}}"> {{ wine.name }}</a></li>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>

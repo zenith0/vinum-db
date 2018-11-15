@@ -1,0 +1,17 @@
+<h1>{{ object.name }}</h1>
+{% if object.front_img %}
+<img src="{{ object.front_img.url }}"></img>
+{% endif %}
+{% if object.back_img %}
+<img src="{{ object.back_img.url }}"></img>
+{% endif %}
+
+<p>Winzer: {{ object.grower }}</p>
+<p>Bewertung: {{ object.rating }}</p>
+<p>Jahrgang: {{ object.year }}</p>
+<p>Farbe: {{ object.color }}</p>
+<p>Beschreibung: {{ object.notes }}</p>
+<p>Land: {{ object.country }}</p>
+<p>Region: {{ object.province }}</p>
+
+<a href="/">Back</a>
